@@ -5,7 +5,6 @@
     <title>Title</title>
 </head>
 <body>
-<h1> index html <h1>
-
+<h1>I am first template</h1>
 </body>
 </html>
