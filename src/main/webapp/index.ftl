@@ -6,6 +6,7 @@
 </head>
 <body>
 <h1> index html <h1>
-
+    <br>
+    <a href="/hello"> Hello page </a>
 </body>
 </html>
