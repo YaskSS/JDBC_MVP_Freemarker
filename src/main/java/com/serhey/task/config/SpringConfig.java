@@ -14,6 +14,9 @@ import javax.sql.DataSource;
 @Configuration
 public class SpringConfig {
 
+    private final String URL = "jdbc:mysql://localhost:3306/users_spring?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+    private final String USER_NAME = "root";
+    private final String USER_PASSWORD = "root";
 
     @Bean
     public JdbcTemplate getJdbcTemplate(){
@@ -23,10 +26,11 @@ public class SpringConfig {
     @Bean
     public DataSource getDataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setUrl("jdbc:mysql://localhost:3306/task?useSell=false");
-        dataSource.setUsername("servicemy");
-        dataSource.setPassword("321rayan");
+        dataSource.setUrl(URL);
+        dataSource.setUsername(USER_NAME);
+        dataSource.setPassword(USER_PASSWORD);
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+
         return dataSource;
     }
 
